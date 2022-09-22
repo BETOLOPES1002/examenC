@@ -93,6 +93,6 @@
 import Headerdma from "./components/Headerdma.vue"
 
   export default {
-    components:{ Card, headercard, footerc, Footerdma, Headerdma },
+    components:{ Card,Footerdma, Headerdma },
   };
 </script>
