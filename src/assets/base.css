@@ -1,4 +1,27 @@
-body{
-    overflow-x: hidden;
-     overflow-x: hidden;
+
+header{
+    background-image: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/e5f92076cd06b8f1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    text-align: center;
+
 }
+header h1{
+    color: orange;
+    font-size: 150px;
+    font-weight: 800;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 25vh;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    -webkit-text-stroke: .3px black;
+    font-family: 'Stylish', sans-serif;
+  }
+  #before{
+    padding: 2.5vh;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Black And White Picture', sans-serif;
+  }

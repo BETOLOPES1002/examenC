@@ -1,12 +1,10 @@
 <template>
-       
-            <div>
-        <img :src="url" alt="nombre">
+        <div class="col col-3 p-1">
+        <img :src="url" :alt="nombre">
         <h2 class="mt-1">{{ nombre }}</h2>
-        <p>{{detalles}}</p>
-        <p><strong> Ingredientes:</strong> {{Ingredientes}}</p>
-        <p class="text-secondary">${{precio}} MXN</p>
-        <a href="https://www.dominos.com.mx/selectordertype" target="_blank" class="m-1">Ordenar</a>
+        <p>Tiempo: {{Ingredientes}}</p>
+        <p class="text-info">Costo de envio: ${{precio}}.00 MXN</p>
+        <a :href="ordenar" target="_blank" class="m-1">Ordenar</a>
         </div>
 </template>
 <script>
@@ -18,62 +16,42 @@ export default{
         nombre:{
             String,
         },
-        detalles:{
-            String,
-        },
+
         precio:{
             Number,
         },
         Ingredientes:{
+            String,
+        },
+        ordenar:{
             String,
         }
     },
 };
 </script>
 <style scoped>
-    div{
-        padding:10px;
-        border: solid 1px;
-        width: 24%;
-        margin: 5px;
-        border-radius: 5px;
-        text-align: center;
-        display: inline-block;
-
-    }
-    
-    div img{
-        width: 100%;
-    }
-    a{
-        text-decoration: none;
-    }
-    body{
-        width: 100%;
-    }
-    
-    @media screen and (max-width: 850px){
-        div{
-        padding:10px;
-        border: solid 1px;
-        width: 40%;
-        margin: 5px;
-        border-radius: 5px;
-        justify-content: center;
-
-    }
-    
+div{
+    box-shadow: 0px 0px 20px gray;
+    text-align: center;
+    width: 30vw;
+    margin: 20px;
+    box-sizing: border-box;
 }
-
-@media screen and (max-width: 380px){
-        div{
-        padding:10px;
-        border: solid 1px;
-        width: 100%;
-        border-radius: 5px;
-        justify-content: center;    
-    }   
-    
+div:hover{
+    transform: scale(0.89,1.07);
+        transition: 1s;
 }
-
+div>img{
+    width: 300px;
+}
+@media screen and (max-width:900px) {
+    div>img{
+        width: 20vw;
+    }
+}
+@media screen and (max-width:1000px) {
+    div>img{
+        width: 25vw;
+    }
+}
 </style>
